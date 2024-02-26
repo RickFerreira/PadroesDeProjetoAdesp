@@ -24,11 +24,6 @@ public interface Administrador {
     public void deleteSala();
 
 
-    public void addLab();
-    public void updateLab();
-    public void deleteLab();
-
-
     public void acessarMatriz();
     public void addMatriz();
     public  void updateMatriz();
