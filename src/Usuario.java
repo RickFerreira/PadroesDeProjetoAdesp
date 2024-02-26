@@ -6,7 +6,7 @@ public interface Usuario {
 
     public void acessarMatriz();
 
-    public void marcarDisciplinaspagas( String disciplina);
+    public void marcarDisciplinaspagas(Disciplina disciplina);
 
     public void acessarContatos(); //acessar professores
 
