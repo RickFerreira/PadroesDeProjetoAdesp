@@ -8,6 +8,6 @@ public interface Usuario {
 
     public void marcarDisciplinaspagas(Disciplina disciplina);
 
-    public void acessarContatos(); //acessar professores
+    public void acessarContatos(); //acessar contato dos professores
 
 }
