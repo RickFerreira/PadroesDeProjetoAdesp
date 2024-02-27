@@ -1,7 +1,6 @@
 <div align="center">
   
 # PadroesDeProjetoAdesp  
-<h4> 
 
 Nesse reposítório vamos armazenar os conteúdos do projeto Portal Adesp, uilizado na disciplina de Padrões de Projeto.
 
@@ -23,7 +22,7 @@ Nesse reposítório vamos armazenar os conteúdos do projeto Portal Adesp, uiliz
 Em processo...
 <br><br>
 
-<img  alt="Wallpaper"  src="https://cdn.discordapp.com/attachments/459871999943114762/1089547309051805766/bart.jpg" width="60%">
+<img  alt="Wallpaper"  src="https://media.discordapp.net/attachments/459871999943114762/1211823658167697418/1.png?ex=65ef99ba&is=65dd24ba&hm=a0ab695e390ae9324e24f002df5b50e103e02c16e7f9c675ae50435523e56f2c&=&format=webp&quality=lossless" width="60%">
 
 <br> 
 
@@ -31,6 +30,30 @@ Em processo...
 
 <img src="https://cdn-icons-png.flaticon.com/512/919/919854.png" alt="Java" width="60"> &nbsp;
 
+<br>
+
+### 👨🏻‍💻 Development Flow
+<br>
+
+<div align="left">
+
+1. Você vai olhar a lista de issues que estão com a label "To dev";
+2. Depois adicione sua assinatura na issue para indicar que ela é sua;
+3. Remova a label "To dev" e adicone a label "Developing" para indicar que iniciou o desenvolvimento da issue;
+4. Agora localmente, tendo o projeto já clonado em sua maquina, você vai fazer um "git branch" para verificar em qual branch você está;
+5. Caso não esteja na main vá para ela com o comando "git checkout main";
+6. Dentro da main você vai criar a sua branch relacionada aquela issue que assinou, utilizando o comando "git checkout -b nomedabranch";
+7. Por padrão vamos adotar o nome da branch assim: numerodaissue-nomedabranch. Exemplo, se o nome for "criar classe" e a issue seja a "#1", ficaria assim "1-criarClasse";
+8. Após criar sua branch verifique se foi feito tudo certinho e está dentro dela com o comando "git branch";
+9. Agora você pode fazer tudo que foi solicitado para essa issue, tenha um bom desenvolvimento ;-)
+10. Após fazer todas as modificações que deseja faça o processo de commit utilizando "git init", "git status", "git add .", "git commit -m  “Mensagem de descrição”" e "git push";
+11. Na mensagem do commit use esse padrão: feature #numerodaissue - Frase do commit;
+12. Caso a issue esteja finalizada você vai remover a label "Developing" e vai adicionar o "Code review";
+13. Nesse momento você precisa abrir a solicitalão de merge para a main e outra pessoa vai olhar seu código e fazer esse merge;
+14. Você agora pode pegar outra issue e repetir o processo;
+15. Caso for fazer o review no código de alguém faça as alterações necessárias e depois aceite o merge para a main;
+
+</div>
 <br>
 
 ### 👨🏻‍💻 Team
