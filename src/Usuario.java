@@ -1,13 +1,13 @@
 public interface Usuario {
 
-    public void acessarHorarios();
+    public void accessSchedules();
 
-    public void acessarMateriais();
+    public void accessMaterial();
 
-    public void acessarMatriz();
+    public void accessCurriculum();
 
-    public void marcarDisciplinaspagas(Disciplina disciplina);
+    public void markPaidSubjects(Subject subject);
 
-    public void acessarContatos(); //acessar contato dos professores
+    public void accessContacts(); //acessar contato dos professores
 
 }
