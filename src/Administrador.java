@@ -1,42 +1,42 @@
-public interface Administrador {
-    public void acessarAdm(String nome, String senha);
+public interface Administrator {
+    public void accessAdmin(String name, String password);
 
 
-    public void acessarHorarioCurso(Periodo periodo);
-    public void acessarHorarioProfessor(Professor professor);
-    public void addHorario(Periodo periodo); //disciplina - horario - diaSemana - professor | POO - 8H40 - Quarta
-    public void updateHorario(Periodo periodo);
-    public void deleteHorario(Periodo periodo);
+    public void accessCourseSchedule(Period period);
+    public void accessTeacherSchedule(Teacher teacher);
+    public void addSchedule(Period period); //disciplina - horario - diaSemana - professor | POO - 8H40 - Quarta
+    public void updateSchedule(Period period);
+    public void deleteSchedule(Period period);
 
 
-    public void addDisciplina();
-    public void deleteDisciplina();
-    public void updateDisciplina();
+    public void addSubject(); //Disciplina
+    public void deleteSubject();
+    public void updateSubject();
 
 
-    public void addProfessor(String nome, String contato);
-    public void updateProfessor(String contato);
-    public void deleteProfessor(Id id);
+    public void addTeacher(String name, String contact); //Professor
+    public void updateTeacher(String contact);
+    public void deleteTeacher(Id id);
 
 
-    public void addSala();
-    public void updateSala();
-    public void deleteSala();
+    public void addRoom(); //Sala
+    public void updateRoom();
+    public void deleteRoom();
 
 
-    public void acessarMatriz();
-    public void addMatriz();
-    public  void updateMatriz();
-    public void deleteMatriz();
+    public void accessCurriculum(); //Matriz
+    public void addCurriculum();
+    public void updateCurriculum();
+    public void deleteCurriculum();
 
 
-    public void acessarMaterial(Disciplina disciplina);
-    public void addMaterial(Disciplina disciplina); //disciplina
+    public void accessMaterial(Subject subject);
+    public void addMaterial(Subject subject); //Disciplina e materiais
     public void updateMaterial();
     public void deleteMaterial();
 
 
-    public void addContatos();
-    public void updateContatos();
-    public void deleteContatos();
+    public void addContacts(); //Contatos
+    public void updateContacts();
+    public void deleteContacts();
 }
