@@ -2,7 +2,7 @@
   
 # PadroesDeProjetoAdesp  
 
-Nesse reposítório vamos armazenar os conteúdos do projeto Portal Adesp, uilizado na disciplina de Padrões de Projeto.
+In this repository, we will store the contents of the Adesp Portal project, used in the Design Patterns discipline.
 
 </h4>    
    
@@ -19,7 +19,7 @@ Nesse reposítório vamos armazenar os conteúdos do projeto Portal Adesp, uiliz
 
 
 ### 💻 Results
-Em processo...
+"In progress..."
 <br><br>
 
 <img  alt="Wallpaper"  src="https://media.discordapp.net/attachments/459871999943114762/1211823658167697418/1.png?ex=65ef99ba&is=65dd24ba&hm=a0ab695e390ae9324e24f002df5b50e103e02c16e7f9c675ae50435523e56f2c&=&format=webp&quality=lossless" width="60%">
@@ -37,21 +37,21 @@ Em processo...
 
 <div align="left">
 
-1. Você vai olhar a lista de issues que estão com a label "To dev";
-2. Depois adicione sua assinatura na issue para indicar que ela é sua;
-3. Remova a label "To dev" e adicone a label "Developing" para indicar que iniciou o desenvolvimento da issue;
-4. Agora localmente, tendo o projeto já clonado em sua maquina, você vai fazer um "git branch" para verificar em qual branch você está;
-5. Caso não esteja na main vá para ela com o comando "git checkout main";
-6. Dentro da main você vai criar a sua branch relacionada aquela issue que assinou, utilizando o comando "git checkout -b nomedabranch";
-7. Por padrão vamos adotar o nome da branch assim: numerodaissue-nomedabranch. Exemplo, se o nome for "criar classe" e a issue seja a "#1", ficaria assim "1-criarClasse";
-8. Após criar sua branch verifique se foi feito tudo certinho e está dentro dela com o comando "git branch";
-9. Agora você pode fazer tudo que foi solicitado para essa issue, tenha um bom desenvolvimento ;-)
-10. Após fazer todas as modificações que deseja faça o processo de commit utilizando "git init", "git status", "git add .", "git commit -m  “Mensagem de descrição”" e "git push";
-11. Na mensagem do commit use esse padrão: feature #numerodaissue - Frase do commit;
-12. Caso a issue esteja finalizada você vai remover a label "Developing" e vai adicionar o "Code review";
-13. Nesse momento você precisa abrir a solicitalão de merge para a main e outra pessoa vai olhar seu código e fazer esse merge;
-14. Você agora pode pegar outra issue e repetir o processo;
-15. Caso for fazer o review no código de alguém faça as alterações necessárias e depois aceite o merge para a main;
+1. You will look at the list of issues labeled "To dev";
+2. Then, add your signature to the issue to indicate that it is assigned to you;
+3. Remove the "To dev" label and add the "Developing" label to indicate that development of the issue has started;
+4. Now, locally, with the project already cloned on your machine, you will use the "git branch" command to check which branch you are on;
+5. If you are not on the main branch, switch to it using the command "git checkout main";
+6. Within the main branch, create your branch related to that issue you signed up for using the command "git checkout -b branchname";
+7. By default, we will adopt the branch name format as follows: issue number-branch name. For example, if the name is "create class" and the issue is "#1", it would be "1-createClass";
+8. After creating your branch, verify that everything was done correctly and that you are within it using the command "git branch";
+9. Now, you can proceed with everything requested for this issue, have a good development ;-)
+10. After making all the modifications you want, follow the commit process using "git init", "git status", "git add .", "git commit -m  “Description message”", and "git push";
+11. Use this pattern in the commit message: feature #issue number - Commit message phrase;
+12. If the issue is completed, you will remove the "Developing" label and add the "Code review" label;
+13. At this point, you need to open a merge request to the main branch, and someone else will review your code and perform the merge;
+14. Now, you can pick another issue and repeat the process;
+15. If you are going to review someone else's code, make the necessary changes and then accept the merge to the main branch.
 
 </div>
 <br>
