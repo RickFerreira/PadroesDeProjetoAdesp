@@ -95,6 +95,6 @@ In this repository, we will store the contents of the Adesp Portal project, used
   </tr>
 </table>
 
-[☝🏽 Voltar ao topo](#Portal-ADESP)<br>
+[☝🏽 Back to the top](#Portal-ADESP)<br>
 
 </div>
