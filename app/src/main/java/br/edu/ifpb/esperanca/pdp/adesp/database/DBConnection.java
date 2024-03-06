@@ -6,12 +6,14 @@ public class DBConnection {
     static final String DB_URL = "jdbc:mysql://localhost:3306/adesp";
     static final String DB_USERNAME = "example";
     static final String DB_PASSWORD = "example";
+    static final String warning = "running"; // warning to dev
 
     public static Connection getConnection() {
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
 
+            System.out.println(warning);
             return DriverManager.getConnection(DB_URL, DB_USERNAME, DB_PASSWORD);
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
@@ -19,5 +21,9 @@ public class DBConnection {
             e.printStackTrace();
         }
         return null;
+    }
+
+    public static void main(String[] args) { // to test
+        getConnection();
     }
 }
