@@ -10,17 +10,25 @@ public class DBConnection {
 
     public static Connection getConnection() {
 
-        try {
+       try {
             Class.forName("com.mysql.cj.jdbc.Driver");
 
             System.out.println(warning);
-            return DriverManager.getConnection(DB_URL, DB_USERNAME, DB_PASSWORD);
+            connection = DriverManager.getConnection(DB_URL, DB_USERNAME, DB_PASSWORD);
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (SQLException e) {
             e.printStackTrace();
+        } finally {
+            try {
+                if (connection != null) {
+                    connection.close();
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
         }
-        return null;
+        return connection;
     }
 
     public static void main(String[] args) { // to test
