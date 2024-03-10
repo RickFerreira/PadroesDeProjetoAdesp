@@ -1,3 +1,6 @@
+package main.java.br.edu.ifpb.esperanca.pdp.adesp.repository;
+
+
 public interface Administrator {
     public void accessAdmin(String name, String password);
 
@@ -8,7 +11,7 @@ public interface Administrator {
     public void updateSchedule(Period period);
     public void deleteSchedule(Period period);
 
-
+    
     public void addSubject(); //Disciplina
     public void deleteSubject();
     public void updateSubject();

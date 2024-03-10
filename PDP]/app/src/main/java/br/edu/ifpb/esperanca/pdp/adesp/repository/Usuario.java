@@ -1,3 +1,5 @@
+package main.java.br.edu.ifpb.esperanca.pdp.adesp.repository;
+
 public interface Usuario {
 
     public void accessSchedules();
