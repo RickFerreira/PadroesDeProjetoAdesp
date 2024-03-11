@@ -14,13 +14,13 @@ public interface DBService {
 
     List<ClassSchedule> getTeacherSchedule(Teacher teacher);
     List<ClassSchedule> getLocationSchedule(ClassLocation classLocation);
-    List<ClassSchedule> getPeriodSchedule(Discipline discipline);
+    List<ClassSchedule> getPeriodSchedule(int period);
 
     void createClassSchedule(List<ClassSchedule> classSchedules);
     void updateClassSchedule(List<ClassSchedule> classSchedules);
     void deleteClassSchedule(int idClassSchedule);
 
     void createMaterial(Material material);
-    void updateMaterial(int idMaterial, Material material);
+    void updateMaterial(Material material);
     void deleteMaterial(int idMaterial);
 }
