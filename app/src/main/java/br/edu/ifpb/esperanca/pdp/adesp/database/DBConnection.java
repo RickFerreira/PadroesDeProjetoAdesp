@@ -4,36 +4,38 @@ import java.sql.*;
 
 // review
 public class DBConnection {
-    static final String DB_URL = "jdbc:mysql://localhost:3306/adesp";
-    static final String DB_USERNAME = "example"; // to test
-    static final String DB_PASSWORD = "example"; // to test
-    static final String warning = "running"; // warning to dev
-    static Connection connection = null;
+    private Connection connection = null;
+    private static DBConnection instance = null;
 
-    public static Connection getConnection() {
-
-       try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-
-            System.out.println(warning); // to test
-            connection = DriverManager.getConnection(DB_URL, DB_USERNAME, DB_PASSWORD);
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } finally {
-            try {
-                if (connection != null) {
-                    connection.close();
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
+    public static DBConnection getInstance() {
+        if (instance == null) {
+            instance = new DBConnection();
         }
-        return connection;
+        return instance;
     }
 
-    public static void main(String[] args) { // to test
-        getConnection();
+    private DBConnection() {
+        try {
+            //conecta com o arquivo adesp ou cria o arquivo adesp
+            connection = DriverManager.getConnection("jdbc:sqlite:adesp.db");
+
+//            connection = DriverManager.getConnection("jdbc:sqlite::resource" + TestDB.class.getResource("/resource/adesp.db"));
+        } catch(SQLException ex) {
+            System.out.println("Ocorreu um erro ao conectar com o banco!");
+//            ex.printStackTrace();
+        }
+    }
+
+    public Connection getConnection() {
+        return this.connection;
+    }
+
+    public void closeConnection() {
+        try {
+            connection.close();
+        } catch(SQLException ex) {
+            System.out.println("Houve um erro ao fechar a conexão com o banco!");
+//            ex.printStackTrace();
+        }
     }
 }

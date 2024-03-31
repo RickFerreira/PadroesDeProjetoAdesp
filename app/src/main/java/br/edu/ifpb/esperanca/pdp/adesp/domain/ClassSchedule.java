@@ -3,85 +3,73 @@ package br.edu.ifpb.esperanca.pdp.adesp.domain;
 // review
 public class ClassSchedule {
     private int id_classSchedule;
-    private int id_adm;
-    private int id_Discipline, id_teacher, id_schedule, id_day, id_location;
+    private Discipline discipline;
+    private Teacher teacher;
+    private Schedule schedule;
+    private ClassLocation classLocation;
+    private WeekDay weekDay;
 
-    public ClassSchedule(
-    int id_adm, 
-    int id_Discipline, 
-    int id_teacher, 
-    int id_schedule, 
-    int id_day, 
-    int id_location) { // to create
-        this.id_adm = id_adm;
-        this.id_Discipline = id_Discipline;
-        this.id_teacher = id_teacher;
-        this.id_schedule = id_schedule;
-        this.id_day = id_day;
-        this.id_location = id_location;
+    // to create
+    public ClassSchedule(Discipline discipline, Teacher teacher, Schedule schedule, ClassLocation classLocation, WeekDay weekDay) {
+        this.discipline = discipline;
+        this.teacher = teacher;
+        this.schedule = schedule;
+        this.classLocation = classLocation;
+        this.weekDay = weekDay;
     }
 
-    public ClassSchedule(int id_classSchedule, 
-    int id_adm, 
-    int id_Discipline, 
-    int id_teacher, 
-    int id_schedule,
-    int id_day, 
-    int id_location) { // to update
+    // to update
+    public ClassSchedule(int id_classSchedule, Discipline discipline, Teacher teacher, Schedule schedule, ClassLocation classLocation, WeekDay weekDay) {
         this.id_classSchedule = id_classSchedule;
-        this.id_adm = id_adm;
-        this.id_Discipline = id_Discipline;
-        this.id_teacher = id_teacher;
-        this.id_schedule = id_schedule;
-        this.id_day = id_day;
-        this.id_location = id_location;
+        this.discipline = discipline;
+        this.teacher = teacher;
+        this.schedule = schedule;
+        this.classLocation = classLocation;
+        this.weekDay = weekDay;
     }
 
     public int getId_classSchedule() {
         return id_classSchedule;
     }
-    
-    public int getId_adm() {
-        return id_adm;
+
+    public Discipline getDiscipline() {
+        return discipline;
     }
-    
-    public int getId_Discipline() {
-        return id_Discipline;
+
+    public void setDiscipline(Discipline discipline) {
+        this.discipline = discipline;
     }
-    
-    public void setId_Discipline(int id_Discipline) {
-        this.id_Discipline = id_Discipline;
+
+    public Teacher getTeacher() {
+        return teacher;
     }
-    
-    public int getId_teacher() {
-        return id_teacher;
+
+    public void setTeacher(Teacher teacher) {
+        this.teacher = teacher;
     }
-    
-    public void setId_teacher(int id_teacher) {
-        this.id_teacher = id_teacher;
+
+    public Schedule getSchedule() {
+        return schedule;
     }
-    
-    public int getId_schedule() {
-        return id_schedule;
+
+    public void setSchedule(Schedule schedule) {
+        this.schedule = schedule;
     }
-    
-    public void setId_schedule(int id_schedule) {
-        this.id_schedule = id_schedule;
+
+    public ClassLocation getClassLocation() {
+        return classLocation;
     }
-    
-    public int getId_day() {
-        return id_day;
+
+    public void setClassLocation(ClassLocation classLocation) {
+        this.classLocation = classLocation;
     }
-    
-    public void setId_day(int id_day) {
-        this.id_day = id_day;
+
+    public WeekDay getWeekDay() {
+        return weekDay;
     }
-    
-    public int getId_location() {
-        return id_location;
+
+    public void setWeekDay(WeekDay weekDay) {
+        this.weekDay = weekDay;
     }
-    
-    public void setId_location(int id_location) {
-        this.id_location = id_location;
-    }
+
 }
