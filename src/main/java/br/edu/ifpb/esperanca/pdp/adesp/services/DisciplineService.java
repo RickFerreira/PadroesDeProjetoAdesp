@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import br.edu.ifpb.esperanca.pdp.adesp.models.Discipline;
-import br.edu.ifpb.esperanca.pdp.adesp.repository.DisciplineRepository;
+import br.edu.ifpb.esperanca.pdp.adesp.repositories.DisciplineRepository;
 
 @Service
 public class DisciplineService {

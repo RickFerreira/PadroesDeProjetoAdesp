@@ -1,28 +1,25 @@
 package br.edu.ifpb.esperanca.pdp.adesp.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import jakarta.persistence.Id;
-import jakarta.persistence.Column;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
+public enum Schedule {
+    SLOT_1("07:00 - 07:50"),
+    SLOT_2("07:50 - 08:40"),
+    SLOT_3("08:40 - 09:30"),
+    SLOT_4("09:50 - 10:40"),
+    SLOT_5("10:40 - 11:30"),
+    SLOT_6("11:30 - 12:20"),
+    SLOT_7("13:00 - 13:50"),
+    SLOT_8("13:50 - 14:40"),
+    SLOT_9("14:40 - 15:30"),
+    SLOT_10("15:50 - 16:40"),
+    SLOT_11("16:40 - 17:30");
 
-@Entity
-@Table(name = "schedule")
-@AllArgsConstructor
-@NoArgsConstructor
-@Getter
-@Setter
-public class Schedule {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id")
-    private int id;
+    private final String timeRange;
 
-    @Column(name = "start_end", nullable = false)
-    private String startEnd;
+    Schedule(String timeRange) {
+        this.timeRange = timeRange;
+    }
+
+    public String getTimeRange() {
+        return timeRange;
+    }
 }

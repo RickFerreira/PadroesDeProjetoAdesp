@@ -1,4 +1,4 @@
-package br.edu.ifpb.esperanca.pdp.adesp.repository;
+package br.edu.ifpb.esperanca.pdp.adesp.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

@@ -21,9 +21,9 @@ import lombok.Setter;
 @Setter
 public class Material {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private int id;
+    private Integer id;
 
     @Column(name = "title", nullable = false)
     private String title;

@@ -9,26 +9,19 @@ import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
 @Entity
 @Table(name="discipline")
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
-@Setter
 public class Discipline {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private int id;
+    private Integer id;
 
-    @Column(name = "name", nullable = false)
     private String name;
-
-    @Column(name = "course", nullable = false)
     private String course;
-
-    @Column(name = "period", nullable = false)
     private int period;
 }

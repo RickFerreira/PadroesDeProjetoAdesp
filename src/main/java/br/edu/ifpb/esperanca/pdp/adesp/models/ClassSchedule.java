@@ -2,6 +2,8 @@ package br.edu.ifpb.esperanca.pdp.adesp.models;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -21,9 +23,9 @@ import lombok.Setter;
 @Setter
 public class ClassSchedule {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private int id;
+    private Integer id;
     
     @ManyToOne
     @JoinColumn(name = "id_discipline", nullable = false)
@@ -37,11 +39,9 @@ public class ClassSchedule {
     @JoinColumn(name = "id_location", nullable = false)
     private ClassLocation location;
 
-    @ManyToOne
-    @JoinColumn(name = "id_schedule", nullable = false)
+    @Enumerated(EnumType.STRING)
     private Schedule schedule;
 
-    @ManyToOne
-    @JoinColumn(name = "id_day", nullable = false)
+    @Enumerated(EnumType.STRING)
     private WeekDay day;
 }
